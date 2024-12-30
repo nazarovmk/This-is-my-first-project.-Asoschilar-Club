@@ -9,6 +9,22 @@ body {
   color: #ffffff;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* WRAPPER START */
+.wrapper {
+  background-image: url(../img/svg/png/Asoschilar\ clum\ img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* WRAPPER END */
+
 /* HEDER START */
 .header {
   padding-top: 65px;
@@ -17,10 +33,6 @@ body {
 
 .header-container {
   max-width: 1414px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -78,16 +90,13 @@ body {
 /* HEADER END */
 
 /* MAIN START */
+/* HERO START */
 .hero {
   padding-top: 125px;
   padding-bottom: 119px;
 }
 .hero-container {
   max-width: 723px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   text-align: center;
 }
 .hero-title {
@@ -126,9 +135,148 @@ body {
   line-height: 30px;
   color: #000000;
 }
+/* HERO END */
+
+/* TOGETHER START */
+.together {
+  padding-top: 119px;
+  padding-bottom: 117px;
+}
+
+.together-container {
+  max-width: 1137px;
+}
+
+.together-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 82px;
+  text-align: center;
+}
+
+.together-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 27px;
+}
+
+.together-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #262626;
+  background-color: #262626;
+  border-radius: 30px;
+  gap: 24px;
+  padding: 0 17px 32px 17px;
+}
+
+.together-col-img {
+  width: 120px;
+  height: 120px;
+  margin-top: -17px;
+  border-radius: 29px;
+}
+
+.together-col-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #cccccc;
+}
+/* TOGETHER END */
+
+/* BENEFITS START */
+.benefits {
+  padding-top: 92px;
+  padding-bottom: 109px;
+}
+
+.benefits-container {
+  max-width: 1098px;
+}
+
+.benefits-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 80px;
+}
+
+.benefits-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 52px;
+}
+
+.benefits-col {
+  padding: 15px 21px 16px 15px;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  border: 1px solid #262626;
+  border-radius: 30px;
+  background-color: #1b1b1b;
+}
+
+.benefits-img {
+  width: 100px;
+  height: 100px;
+}
+
+.benefits-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #cccccc;
+}
+/* BENEFITS END */
+
 /* MAIN END */
 
 /* MEDIA */
+@media (max-width: 1029px) {
+  .together-row {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 47px 30px;
+  }
+
+  .together-col {
+    max-width: 329px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 980px) {
+  /* BENEFITS START */
+  .benefits-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* BENEFITS END */
+}
+
 @media (max-width: 840px) {
   /* HEADER START */
   .header {
@@ -176,6 +324,71 @@ body {
     img {
       width: 30px;
     }
+  }
+
+  /* TOHETHER START */
+  .together {
+    padding-bottom: 42px;
+  }
+
+  .together-title {
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 57px;
+  }
+  .together-col {
+    gap: 7px;
+    border-radius: 24px;
+  }
+
+  .together-col-img {
+    width: 96px;
+    height: 96px;
+    border-radius: 20px;
+  }
+
+  .together-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .together-col-text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  /* TOGETHER END */
+
+  /* BENEFITS START */
+  .benefits {
+    padding-top: 48px;
+    padding-bottom: 24px;
+  }
+
+  .benefits-title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .benefits-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .benefits-col {
+    padding: 16px 19px;
+    border-radius: 20px;
+  }
+
+  .benefits-img {
+    width: 80px;
+    height: 80px;
+  }
+  /* BENEFITS END */
+}
+
+@media (max-width: 540px) {
+  .together-row {
+    grid-template-columns: 1fr;
   }
 }
 
