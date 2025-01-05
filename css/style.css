@@ -9,6 +9,7 @@
 body {
   background-color: #0d0d0d;
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 html {
@@ -489,6 +490,56 @@ html {
   margin-right: auto;
 }
 /*  COUNT END */
+
+/* MISSION START */
+.mission {
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+
+.mission-container {
+  max-width: 1100px;
+}
+
+.mission-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 40px;
+}
+
+.mission-info {
+  background: linear-gradient(113.49deg, #ffffff 0%, #d2d2d2 100%);
+  padding: 78px 75px 99px 74px;
+  border-radius: 24px;
+  position: relative;
+}
+
+.mission-img {
+  position: absolute;
+  max-width: 190px;
+  bottom: -33px;
+  right: -100px;
+}
+
+.mission-info-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+}
+/* MISSION END */
 /* MAIN END */
 
 /* MEDIA */
@@ -685,11 +736,62 @@ html {
   /* FORM END */
 
   /* COUNT START */
+
+  .count {
+    padding-top: 38px;
+    padding-bottom: 30px;
+  }
+
+  .count-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+  }
   .count-row {
     display: flex;
     flex-direction: column;
   }
+
+  .count-col-title {
+    font-size: 54px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+  }
+
+  .count-col-text {
+    font-size: 18px;
+    line-height: 1.2;
+  }
   /* COUNT END */
+
+  /* MISSION START */
+  .mission {
+    padding-top: 30px;
+    padding-bottom: 28px;
+  }
+
+  .mission-title {
+    font-size: 27px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
+
+  .mission-info {
+    padding: 40px 30px;
+  }
+
+  .mission-info-text {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .mission-img {
+    position: absolute;
+    max-width: 121px;
+    bottom: -44px;
+    right: -29px;
+  }
+  /* MISSION END */
 }
 
 @media (max-width: 640px) {
