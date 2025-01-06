@@ -103,10 +103,12 @@ html {
   padding-top: 125px;
   padding-bottom: 119px;
 }
+
 .hero-container {
   max-width: 723px;
   text-align: center;
 }
+
 .hero-title {
   font-family: "Poppins", sans-serif;
   font-size: 132px;
@@ -117,6 +119,7 @@ html {
   background-clip: text;
   margin-bottom: 30px;
 }
+
 .hero-text {
   font-family: "Inter", sans-serif;
   font-size: 30px;
@@ -128,6 +131,7 @@ html {
   margin-right: auto;
   margin-bottom: 49px;
 }
+
 .hero-link {
   background-color: #ffffff;
   border: 1px solid #ffffff;
@@ -332,6 +336,7 @@ html {
   color: #d7d7d7;
   padding-left: 20px;
 }
+
 .form-col-input {
   padding: 13px 16px 13px 16px;
   font-family: "Poppins", sans-serif;
@@ -540,6 +545,173 @@ html {
   color: #000000;
 }
 /* MISSION END */
+
+/* CLUB-REASONS START */
+.club-reasons {
+  padding-top: 84px;
+  padding-bottom: 105px;
+}
+
+.club-reasons-container {
+  max-width: 1138px;
+}
+
+.club-reasons-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 85px;
+}
+
+.club-reasons-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 82px;
+}
+
+.club-reasons-col {
+  background-color: #ffffff;
+  gap: 24px;
+  padding: 17px 27px 17px 25px;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.club-reasons-row .club-reasons-col:nth-child(1) {
+  order: 0;
+}
+
+.club-reasons-row .club-reasons-col:nth-child(2) {
+  order: 3;
+}
+
+.club-reasons-row .club-reasons-col:nth-child(3) {
+  order: 5;
+}
+
+.club-reasons-row .club-reasons-col:nth-child(4) {
+  order: 2;
+}
+
+.club-reasons-row .club-reasons-col:nth-child(5) {
+  order: 4;
+}
+
+.club-reasons-row .club-reasons-col:nth-child(6) {
+  order: 6;
+}
+
+.club-reasons-col-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 132px;
+  text-align: center;
+  color: #e0e0e0;
+  height: 85px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.club-reasons-col-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+}
+/* CLUB-REASONS END */
+
+/* REQUIREMENT START */
+.requirement {
+  padding-top: 104px;
+  padding-bottom: 91px;
+}
+
+.requirement-container {
+  max-width: 1138px;
+}
+
+.requirement-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 52.8px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 78px;
+}
+
+.requirement-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 79px;
+}
+
+.requirement-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 52px;
+  justify-content: center;
+}
+
+.requirement-col {
+  background-color: #262626;
+  gap: 16px;
+  border: 1px solid #262626;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  max-width: 329px;
+  padding: 31px 22px 32px 16px;
+}
+
+.requirement-col:nth-child(4) {
+  max-width: 382px;
+}
+
+.requirement-col:nth-child(5) {
+  max-width: 382px;
+}
+
+.requirement-col-img {
+  width: 100px;
+  height: 100px;
+}
+
+.requirement-col-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #cccccc;
+}
+/* REQUIREMENT END */
 /* MAIN END */
 
 /* MEDIA */
@@ -554,6 +726,12 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* REQUIREMENT START */
+  .requirement-col {
+    max-width: 45% !important;
+  }
+  /* REQUIREMENT END */
 }
 
 @media (max-width: 1018px) {
@@ -567,6 +745,12 @@ html {
     order: -1;
   }
   /* ABOUT END */
+
+  /*  CLUB-REASONS START */
+  .club-reasons-row {
+    gap: 28px;
+  }
+  /* CLUB-REASONS END */
 }
 
 @media (max-width: 980px) {
@@ -582,6 +766,16 @@ html {
     grid-template-columns: 1fr 1fr;
   }
   /* FORM END */
+}
+
+@media (max-width: 860px) {
+  .club-reasons-row {
+    grid-template-columns: 1fr;
+  }
+
+  .club-reasons-col {
+    order: 0 !important;
+  }
 }
 
 @media (max-width: 840px) {
@@ -643,6 +837,7 @@ html {
     line-height: 1.2;
     margin-bottom: 57px;
   }
+
   .together-col {
     gap: 7px;
     border-radius: 24px;
@@ -747,6 +942,7 @@ html {
     margin-bottom: 40px;
     line-height: 1.2;
   }
+
   .count-row {
     display: flex;
     flex-direction: column;
@@ -792,6 +988,71 @@ html {
     right: -29px;
   }
   /* MISSION END */
+
+  /* CLUB-REASONS START */
+
+  .club-reasons {
+    padding-top: 37px;
+    padding-bottom: 56px;
+  }
+
+  .club-reasons-title {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+
+  .club-reasons-col-title {
+    font-size: 80px;
+    width: 48px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+  }
+
+  .club-reasons-col-text {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  /* CLUB-REASONS END */
+
+  /* REQUIREMENT START */
+
+  .requirement {
+    padding-top: 26px;
+    padding-bottom: 27px;
+  }
+
+  .requirement-row {
+    display: grid;
+    gap: 30px;
+  }
+
+  .requirement-col {
+    max-width: 100% !important;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .requirement-title {
+    font-size: 30px;
+    margin-bottom: 36px;
+  }
+
+  .requirement-heading {
+    font-size: 20px;
+    margin-bottom: 28px;
+  }
+
+  .requirement-col-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .requirement-col-text {
+    font-size: 18px;
+  }
+  /* REQUIREMENT END */
 }
 
 @media (max-width: 640px) {
