@@ -17,10 +17,10 @@ html {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* WRAPPER START */
@@ -54,9 +54,9 @@ html {
   display: flex;
   gap: 48px;
   border: 1px solid #262626;
-  padding: 20px 34px;
   border-radius: 50px;
   background-color: #17171799;
+  padding: 20px 34px;
 }
 
 .nav-link {
@@ -68,11 +68,15 @@ html {
   line-height: 20.8px;
 }
 
+.nav-link:hover {
+  color: #cccccc;
+  transition: 0.2s;
+}
+
 .header-btn {
   color: #cccccc;
   background-color: #17171799;
   border: 1px solid #262626;
-  padding: 16px 28px;
   border-radius: 50px;
   text-decoration: none;
   cursor: pointer;
@@ -80,6 +84,12 @@ html {
   font-size: 16px;
   font-weight: 500;
   line-height: 20.8px;
+  padding: 16px 28px;
+}
+
+.header-btn:hover {
+  color: #ffffff;
+  transition: 0.2s;
 }
 
 .hamburger-btn {
@@ -89,10 +99,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   border-radius: 50%;
   cursor: pointer;
   display: none;
+  padding: 10px;
 }
 /* HEADER END */
 
@@ -138,13 +148,13 @@ html {
   align-items: center;
   gap: 24px;
   text-decoration: none;
-  padding: 9px 15px 10px 20px;
   border-radius: 50px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
   color: #000000;
+  padding: 9px 15px 10px 20px;
 }
 /* HERO END */
 
@@ -170,8 +180,8 @@ html {
   );
   color: transparent;
   background-clip: text;
-  margin-bottom: 82px;
   text-align: center;
+  margin-bottom: 82px;
 }
 
 .together-row {
@@ -195,8 +205,8 @@ html {
 .together-col-img {
   width: 120px;
   height: 120px;
-  margin-top: -17px;
   border-radius: 29px;
+  margin-top: -17px;
 }
 
 .together-col-text {
@@ -210,8 +220,8 @@ html {
 
 /* BENEFITS START */
 .benefits {
-  padding-top: 92px;
   padding-bottom: 109px;
+  padding-top: 92px;
 }
 
 .benefits-container {
@@ -303,9 +313,9 @@ html {
   color: transparent;
   background-clip: text;
   max-width: 840px;
-  margin-bottom: 47px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 47px;
 }
 
 .form-row {
@@ -337,7 +347,6 @@ html {
 }
 
 .form-col-input {
-  padding: 13px 16px 13px 16px;
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -347,6 +356,7 @@ html {
   border-radius: 22px;
   border: none;
   width: 100%;
+  padding: 13px 16px 13px 16px;
 }
 
 .form-col-input::placeholder {
@@ -359,9 +369,9 @@ html {
   border-radius: 22px;
   padding-top: 15px;
   padding-bottom: 15px;
-  margin-top: 14px;
   cursor: pointer;
   transform: translateY(12px);
+  margin-top: 14px;
 }
 /* FORM END */
 
@@ -407,8 +417,8 @@ html {
   font-size: 51px;
   font-weight: 600;
   line-height: 41.8px;
-  margin-bottom: 35px;
   color: #cccccc;
+  margin-bottom: 35px;
 }
 
 .about-info-text {
@@ -523,9 +533,9 @@ html {
 
 .mission-info {
   background: linear-gradient(113.49deg, #ffffff 0%, #d2d2d2 100%);
-  padding: 78px 75px 99px 74px;
   border-radius: 24px;
   position: relative;
+  padding: 78px 75px 99px 74px;
 }
 
 .mission-img {
@@ -580,10 +590,10 @@ html {
 .club-reasons-col {
   background-color: #ffffff;
   gap: 24px;
-  padding: 17px 27px 17px 25px;
   display: flex;
   align-items: center;
   border-radius: 24px;
+  padding: 17px 27px 17px 25px;
 }
 
 .club-reasons-row .club-reasons-col:nth-child(1) {
@@ -714,10 +724,10 @@ html {
 
 /* MEETING START */
 .meeting {
-  padding-top: 87px;
-  padding-bottom: 107px;
   background-color: #ffffff;
   color: #000000;
+  padding-top: 87px;
+  padding-bottom: 107px;
 }
 
 .meeting-container {
@@ -838,8 +848,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 68px 27px 80px;
   border-radius: 24px;
+  padding: 18px 68px 27px 80px;
 }
 
 .steps-col {
@@ -863,8 +873,8 @@ html {
 .steps-col-img {
   width: 74px;
   height: 74px;
-  margin-bottom: 14px;
   display: flex;
+  margin-bottom: 14px;
 }
 
 .steps-col-text {
@@ -942,9 +952,9 @@ html {
 
 .price-bottom {
   max-width: 980px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .price-maney-title {
@@ -973,10 +983,10 @@ html {
 .price-col {
   border: 1px solid #262626;
   background-color: #303030;
-  padding: 34px 32px 33px;
   border: 1px solid #262626;
   border-radius: 30px;
   position: relative;
+  padding: 34px 32px 33px;
 }
 
 .price-top .price-col:nth-child(2) {
@@ -1014,7 +1024,7 @@ html {
 }
 
 .price-col-text {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-size: 25px;
   font-weight: 400;
   line-height: 24px;
@@ -1023,6 +1033,179 @@ html {
   color: #cccccc;
 }
 /* PRICE END */
+
+/* MEMBERS START */
+.members {
+  padding-top: 103px;
+  padding-bottom: 99px;
+}
+
+.members-container {
+  max-width: 1279px;
+}
+
+.members-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52.8px;
+  letter-spacing: -1.3200000524520874px;
+  text-align: center;
+  background: linear-gradient(
+    79.97deg,
+    #fffff7 0%,
+    rgba(255, 255, 247, 0.34) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 74px;
+}
+
+.members-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px 26px;
+}
+
+.members-col {
+  border: 1px solid #262626;
+  border-radius: 30px;
+  background-color: #1b1b1b;
+  padding: 14px 14px 21px 15px;
+}
+
+.members-col-img {
+  width: 100%;
+  object-fit: cover;
+  height: 170px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+
+.members-col-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.5199999809265137px;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 7px;
+  margin-bottom: 12px;
+}
+
+.members-col-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 13px;
+  text-align: left;
+  color: #cecece;
+  max-width: 214px;
+  padding-left: 7px;
+}
+
+.members-col-count {
+  font-family: "Poppins", sans-serif;
+  font-size: 120px;
+  font-weight: 500;
+  line-height: 132px;
+  letter-spacing: -0.5199999809265137px;
+  text-align: left;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* MEMBERS END */
+
+/* CONTACT START */
+.contact {
+  padding-top: 110px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact-container {
+  max-width: 1100px;
+  background: linear-gradient(113.49deg, #1a1a1a 0%, #0d0d0d 100%);
+  border-radius: 24px;
+  padding: 62px 35px 64px 59px;
+}
+
+.contact-title1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: -1.6200000047683716px;
+  text-align: center;
+  color: #cccccc;
+  max-width: 558px;
+  margin-bottom: 23px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-title2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: -1.6200000047683716px;
+  text-align: center;
+  color: #cccccc;
+}
+
+.contact-list {
+  background-color: #ffffff;
+  max-width: 966px;
+  display: flex;
+  border-radius: 22px;
+  color: #adadad;
+  justify-content: center;
+  gap: 61px;
+  list-style: none;
+  align-items: center;
+  padding-bottom: 13px;
+  padding-top: 13px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-list .contact-item:nth-child(2) {
+  border-left: 3px dashed #c1c1c1;
+  border-right: 3px dashed #c1c1c1;
+  padding-left: 37px;
+  padding-right: 38px;
+}
+
+.contact-item-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 14px;
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.contact-item-link {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 10px;
+  letter-spacing: -0.04em;
+  text-align: left;
+}
+
+.contact-item-link:hover {
+  color: #4f9bff;
+  transition: 0.3s;
+}
+/* CONTACT END */
 /* MAIN END */
 
 /* MEDIA */
@@ -1062,6 +1245,17 @@ html {
     gap: 28px;
   }
   /* CLUB-REASONS END */
+
+  /* MEMBERS START */
+  .members {
+    padding-top: 22px;
+    padding-bottom: 24px;
+  }
+
+  .members-row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* MEMBERS END */
 }
 
 @media (max-width: 980px) {
@@ -1100,6 +1294,7 @@ html {
     font-size: 20px;
   }
   /* MEETING END */
+
   /* PRICE START */
   .price-top {
     display: flex;
@@ -1111,6 +1306,35 @@ html {
     transform: translate(0);
   }
   /* PRICE END */
+}
+
+@media (max-width: 940px) {
+  .contact-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .contact-list {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    padding: 20px 40px;
+  }
+
+  .contact-item {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+
+  .contact-list .contact-item:nth-child(2) {
+    border-left: none;
+    border-right: none;
+    padding: 0;
+    border-top: 3px dashed #c1c1c1;
+    border-bottom: 3px dashed #c1c1c1;
+    padding: 16px 37px 16px 0;
+  }
 }
 
 @media (max-width: 920px) {
@@ -1223,9 +1447,9 @@ html {
   }
 
   .benefits-title {
-    margin-bottom: 40px;
     font-size: 30px;
     line-height: 1.2;
+    margin-bottom: 40px;
   }
 
   .benefits-row {
@@ -1234,8 +1458,8 @@ html {
   }
 
   .benefits-col {
-    padding: 16px 19px;
     border-radius: 20px;
+    padding: 16px 19px;
   }
 
   .benefits-img {
@@ -1274,9 +1498,9 @@ html {
 
   .form-img1 {
     position: absolute;
-    bottom: 260px;
     left: -90px;
     max-width: 160px;
+    bottom: 260px;
   }
 
   .form-img2 {
@@ -1296,8 +1520,8 @@ html {
 
   .count-title {
     font-size: 30px;
-    margin-bottom: 40px;
     line-height: 1.2;
+    margin-bottom: 40px;
   }
 
   .count-row {
@@ -1387,8 +1611,8 @@ html {
 
   .requirement-col {
     max-width: 100% !important;
-    padding: 16px;
     border-radius: 20px;
+    padding: 16px;
   }
 
   .requirement-title {
@@ -1427,8 +1651,8 @@ html {
   }
 
   .meeting-title {
-    margin-bottom: 40px;
     line-height: 1.2;
+    margin-bottom: 40px;
   }
 
   .meeting-col-text {
@@ -1449,10 +1673,10 @@ html {
     align-items: center;
     justify-content: center;
     max-width: 360px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 17px;
     gap: 60px;
+    padding: 40px 17px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .steps-col {
@@ -1530,6 +1754,39 @@ html {
     font-size: 24px;
   }
   /* PRICE END */
+
+  /* MEMBERS START */
+  .members-row {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* MEMBERS END */
+
+  /* CONTACT START */
+  .contact {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 1px;
+  }
+
+  .contact-container {
+    border-radius: 0;
+    padding: 35px 25px;
+  }
+
+  .contact-title1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .contact-title2 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .contact-list {
+    padding: 16px;
+  }
+  /* CONTACT END */
 }
 
 @media (max-width: 640px) {
@@ -1567,8 +1824,21 @@ html {
 }
 
 @media (max-width: 540px) {
+  /* TOGETHER START */
   .together-row {
     grid-template-columns: 1fr;
   }
+  /* TOGETHER END */
+
+  /* MEMBERS START */
+  .members-row {
+    grid-template-columns: 1fr;
+  }
+
+  .members-title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  /* MEMBERS END */
 }
 /* MADIA END */
