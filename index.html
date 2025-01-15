@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="shortcut icon" href="./img/svg/logo.svg" type="image/x-icon" />
     <title>Asoschilar Club</title>
   </head>
@@ -17,12 +19,14 @@
           </a>
           <ul class="nav-list">
             <li class="nav-item">
-              <a class="nav-link" href="#">Biz kimmiz?</a>
+              <a class="nav-link" href="#about">Biz kimmiz?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Qo‘shilish Shartlari</a>
+              <a class="nav-link" href="#requirement">Qo‘shilish Shartlari</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Narxlar</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#price">Narxlar</a>
+            </li>
           </ul>
           <a class="header-btn" href="tel:+998990339938">+998990339938</a>
           <button class="hamburger-btn">
@@ -40,11 +44,17 @@
       <!-- HERO START -->
       <section class="hero">
         <div class="hero-container container">
-          <h1 class="hero-title">Asoschilar Club</h1>
-          <p class="hero-text">
+          <h1 data-aos="zoom-out-up" data-aos-duration="600" class="hero-title">
+            Asoschilar Club
+          </h1>
+          <p data-aos="zoom-out-up" data-aos-duration="800" class="hero-text">
             Katta maqsadli tadbirkorlar uchun yopiq biznes klub
           </p>
-          <a class="hero-link" href="#"
+          <a
+            data-aos="zoom-out-up"
+            data-aos-duration="1000"
+            class="hero-link"
+            href="#form"
             >Ariza topshirish <img src="./img/svg/btn-icon.svg" alt=""
           /></a>
         </div>
@@ -54,9 +64,19 @@
       <!-- TOGETHER START -->
       <section class="together">
         <div class="together-container container">
-          <h2 class="together-title">Biz bilan birgalikda:</h2>
+          <h2
+            data-aos="zoom-in-right"
+            data-aos-duration="800"
+            class="together-title"
+          >
+            Biz bilan birgalikda:
+          </h2>
           <div class="together-row">
-            <div class="together-col">
+            <div
+              data-aos="zoom-in-right"
+              data-aos-duration="800"
+              class="together-col"
+            >
               <img
                 class="together-col-img"
                 src="./img/png/svet icon.png"
@@ -66,7 +86,11 @@
                 Tajriba almashasiz va yangi g‘oyalar olasiz
               </p>
             </div>
-            <div class="together-col">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-duration="600"
+              class="together-col"
+            >
               <img
                 class="together-col-img"
                 src="./img/png/energy icon.png"
@@ -76,7 +100,11 @@
                 Energiya yig‘asiz va yaxshi vaqt o’tkazasiz!
               </p>
             </div>
-            <div class="together-col">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-duration="600"
+              class="together-col"
+            >
               <img
                 class="together-col-img"
                 src="./img/png/person icon.png"
@@ -86,7 +114,11 @@
                 Muvaffaqiyatli tadbirkorlar bilan tanishasiz
               </p>
             </div>
-            <div class="together-col">
+            <div
+              data-aos="zoom-in-left"
+              data-aos-duration="800"
+              class="together-col"
+            >
               <img
                 class="together-col-img"
                 src="./img/png/plus icon.png"
@@ -106,9 +138,19 @@
     <!-- BENEFITS START -->
     <section class="benefits">
       <div class="benefits-container container">
-        <h2 class="benefits-title">Klub imtiyozlari:</h2>
+        <h2
+          data-aos-duration="800"
+          data-aos="zoom-in-right"
+          class="benefits-title"
+        >
+          Klub imtiyozlari:
+        </h2>
         <div class="benefits-row">
-          <div class="benefits-col">
+          <div
+            data-aos-duration="800"
+            data-aos="zoom-in-right"
+            class="benefits-col"
+          >
             <img
               class="benefits-img"
               src="./img/png/networking icon.png"
@@ -116,7 +158,11 @@
             />
             <p class="benefits-text">Networking</p>
           </div>
-          <div class="benefits-col">
+          <div
+            data-aos-duration="800"
+            data-aos="zoom-in-right"
+            class="benefits-col"
+          >
             <img
               class="benefits-img"
               src="./img/png/razborlar icon.png"
@@ -124,7 +170,11 @@
             />
             <p class="benefits-text">Razborlar</p>
           </div>
-          <div class="benefits-col">
+          <div
+            data-aos-duration="800"
+            data-aos="zoom-in-right"
+            class="benefits-col"
+          >
             <img
               class="benefits-img"
               src="./img/png/mehmon icon.png"
@@ -138,23 +188,25 @@
     <!-- BENEFITS END -->
 
     <!-- FORM START -->
-    <section class="form">
+    <section class="form" id="form">
       <div class="form-container container">
         <img
+          data-aos="fade-right"
           class="form-img1"
           src="./img/png/galichka two.png"
           alt="form img1"
         />
         <img
+          data-aos="fade-left"
           class="form-img2"
           src="./img/png/galichka two.png"
           alt="form img2"
         />
-        <h2 class="form-title">
+        <h2 data-aos="zoom-in-up" data-aos-duration="600" class="form-title">
           Qo‘shiling va o‘z biznesingizni rivojlantiring!
         </h2>
         <form action="" class="form-row">
-          <div class="form-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="form-col">
             <label class="form-col-title" for="ism">Ismingiz</label>
             <input
               required
@@ -164,7 +216,7 @@
               placeholder="Ismingizni kiriting"
             />
           </div>
-          <div class="form-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="form-col">
             <label class="form-col-title" for="telefon"
               >Telefon raqamingiz</label
             >
@@ -176,7 +228,7 @@
               placeholder="+998"
             />
           </div>
-          <div class="form-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="form-col">
             <button class="hero-link form-btn">
               Ariza topshirish <img src="./img/svg/btn-icon.svg" alt="" />
             </button>
@@ -187,11 +239,13 @@
     <!-- FORM END -->
 
     <!-- ABOUT START -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-container container">
-        <h2 class="about-title">Biz kimmiz?</h2>
+        <h2 data-aos="zoom-in-up" data-aos-duration="600" class="about-title">
+          Biz kimmiz?
+        </h2>
         <div class="about-box">
-          <div class="about-info">
+          <div data-aos="fade-right" data-aos-duration="600" class="about-info">
             <h3 class="about-info-title">Asoschilar Club –</h3>
             <p class="about-info-text">
               biznes va shaxsiy rivojlanishda o‘sishga intilayotgan tadbirkorlar
@@ -199,6 +253,8 @@
             </p>
           </div>
           <img
+            data-aos="fade-left"
+            data-aos-duration="600"
             class="about-img"
             src="./img/png/about img.png"
             alt="Asoschilar club img"
@@ -211,17 +267,19 @@
     <!-- COUNT START -->
     <section class="count">
       <div class="count-container container">
-        <h2 class="count-title">Statistika bilan tanishing:</h2>
+        <h2 data-aos="fade-right" data-aos-duration="600" class="count-title">
+          Statistika bilan tanishing:
+        </h2>
         <div class="count-row">
-          <div class="count-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="count-col">
             <h3 class="count-col-title">30+</h3>
             <p class="count-col-text">A’zolar soni</p>
           </div>
-          <div class="count-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="count-col">
             <h3 class="count-col-title">10,000$+</h3>
             <p class="count-col-text">30% a’zolarning oylik daromadi</p>
           </div>
-          <div class="count-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="count-col">
             <h3 class="count-col-title">50,000$+</h3>
             <p class="count-col-text">10% a’zolarning oylik daromadi</p>
           </div>
@@ -233,8 +291,10 @@
     <!-- MISSION START -->
     <section class="mission">
       <div class="mission-container container">
-        <h2 class="mission-title">Missiyamiz</h2>
-        <div class="mission-info">
+        <h2 data-aos="zoom-in-up" data-aos-duration="600" class="mission-title">
+          Missiyamiz
+        </h2>
+        <div data-aos="zoom-in-up" data-aos-duration="600" class="mission-info">
           <img
             class="mission-img"
             src="./img/png/mission img.png"
@@ -252,9 +312,19 @@
     <!-- CLUB-REASONS START -->
     <section class="club-reasons">
       <div class="club-reasons-container container">
-        <h2 class="club-reasons-title">Nega klubga qo'shilish kerak?</h2>
+        <h2
+          data-aos="zoom-in-up"
+          data-aos-duration="600"
+          class="club-reasons-title"
+        >
+          Nega klubga qo'shilish kerak?
+        </h2>
         <div class="club-reasons-row">
-          <div class="club-reasons-col">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="600"
+            class="club-reasons-col"
+          >
             <h3 class="club-reasons-col-title">1</h3>
             <p class="club-reasons-col-text">
               Tadbirkorga o’zidek fikrlaydigan, o’zi kabi risk ola biladigan va
@@ -262,7 +332,11 @@
               uchun
             </p>
           </div>
-          <div class="club-reasons-col">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="800"
+            class="club-reasons-col"
+          >
             <h3 class="club-reasons-col-title">2</h3>
             <p class="club-reasons-col-text">
               Klubda faqat biznesdagi odamlar yig'ilgan, ular bilan qolgan
@@ -270,7 +344,11 @@
               chunki qolganlarda ham shunday muammolar bor bo'lgan.
             </p>
           </div>
-          <div class="club-reasons-col">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            class="club-reasons-col"
+          >
             <h3 class="club-reasons-col-title">3</h3>
             <p class="club-reasons-col-text">
               Biznes o'z asoschisidan oldinga o'tib keta olmaydi, shuning uchun
@@ -278,14 +356,22 @@
               ham rivojlanadi.
             </p>
           </div>
-          <div class="club-reasons-col">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="600"
+            class="club-reasons-col"
+          >
             <h3 class="club-reasons-col-title">4</h3>
             <p class="club-reasons-col-text">
               Klubimizda ishtirokchilarning fikrlashlari keng va ular yaxshi pul
               topadi, ba'zi ishtirokchilar oyiga $50.000+ sof daromad qiladi.
             </p>
           </div>
-          <div class="club-reasons-col">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="800"
+            class="club-reasons-col"
+          >
             <h3 class="club-reasons-col-title">5</h3>
             <p class="club-reasons-col-text">
               Networking. Klubda har xil sohalardan odamlar yig'ilgan, yangi
@@ -293,7 +379,11 @@
               ishtirokchida ham, o'ziga yarasha, tanishlari va tajribasi bor.
             </p>
           </div>
-          <div class="club-reasons-col">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="club-reasons-col"
+          >
             <h3 class="club-reasons-col-title">6</h3>
             <p class="club-reasons-col-text">
               Tadbirkor doim energiyaga to'la bo'lishi kerak. Boshqa
@@ -307,12 +397,28 @@
     <!-- CLUB-REASONS END  -->
 
     <!-- REQUIREMENT START -->
-    <section class="requirement">
+    <section class="requirement" id="requirement">
       <div class="requirement-container container">
-        <h2 class="requirement-title">Qo‘shilish Shartlari va Talablar</h2>
-        <h3 class="requirement-heading">Kimlar qo‘shila oladi?</h3>
+        <h2
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          class="requirement-title"
+        >
+          Qo‘shilish Shartlari va Talablar
+        </h2>
+        <h3
+          data-aos-duration="800"
+          data-aos="zoom-in"
+          class="requirement-heading"
+        >
+          Kimlar qo‘shila oladi?
+        </h3>
         <div class="requirement-row">
-          <div class="requirement-col">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="600"
+            class="requirement-col"
+          >
             <img
               class="requirement-col-img"
               src="./img/png/requirement img1.png"
@@ -322,7 +428,11 @@
               Tadbirkor yoki biznes rahbari bo‘lgan shaxslar
             </p>
           </div>
-          <div class="requirement-col">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="600"
+            class="requirement-col"
+          >
             <img
               class="requirement-col-img"
               src="./img/png/requirement img2.png"
@@ -330,7 +440,11 @@
             />
             <p class="requirement-col-text">Oylik daromadi $5000+ bo‘lganlar</p>
           </div>
-          <div class="requirement-col">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="600"
+            class="requirement-col"
+          >
             <img
               class="requirement-col-img"
               src="./img/png/requirement img3.png"
@@ -340,7 +454,11 @@
               Milliy qadriyatlarga hurmat bilan qaraydigan
             </p>
           </div>
-          <div class="requirement-col">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            class="requirement-col"
+          >
             <img
               class="requirement-col-img"
               src="./img/png/requirement img 4.png"
@@ -351,7 +469,11 @@
               mutaxassislari
             </p>
           </div>
-          <div class="requirement-col">
+          <div
+            data-aos="zoom-in"
+            data-aos-duration="800"
+            class="requirement-col"
+          >
             <img
               class="requirement-col-img"
               src="./img/png/requirement img5.png"
@@ -369,9 +491,15 @@
     <!-- MEETING START -->
     <section class="meeting">
       <div class="meeting-container container">
-        <h2 class="meeting-title">Uchrashuv tartibi:</h2>
+        <h2 data-aos="zoom-in" data-aos-duration="800" class="meeting-title">
+          Uchrashuv tartibi:
+        </h2>
         <div class="meeting-row">
-          <div class="meeting-col">
+          <div
+            data-aos="fade-down-right"
+            data-aos-duration="600"
+            class="meeting-col"
+          >
             <img
               class="meeting-col-img"
               src="./img/png/MEETING img1.png"
@@ -382,7 +510,11 @@
               club a’zolari bilan offline ko’rishish.
             </p>
           </div>
-          <div class="meeting-col">
+          <div
+            data-aos="fade-down-right"
+            data-aos-duration="600"
+            class="meeting-col"
+          >
             <img
               class="meeting-col-img"
               src="./img/png/meeting img2.png"
@@ -394,7 +526,11 @@
               bo'lganini aytib beradi, jamoa esa birga yechim beradi.
             </p>
           </div>
-          <div class="meeting-col">
+          <div
+            data-aos="fade-down-right"
+            data-aos-duration="800"
+            class="meeting-col"
+          >
             <img
               class="meeting-col-img"
               src="./img/png/meeting img3.png"
@@ -405,7 +541,11 @@
               Tanilgan va katta tadbirkorlarni mehmon qilib chaqiramiz.
             </p>
           </div>
-          <div class="meeting-col">
+          <div
+            data-aos="fade-down-right"
+            data-aos-duration="800"
+            class="meeting-col"
+          >
             <img
               class="meeting-col-img"
               src="./img/png/meeting img4.png"
@@ -417,7 +557,11 @@
               prezentatsiyasi.
             </p>
           </div>
-          <div class="meeting-col">
+          <div
+            data-aos="fade-down-left"
+            data-aos-duration="1000"
+            class="meeting-col"
+          >
             <img
               class="meeting-col-img"
               src="./img/png/meeting  img5.png"
@@ -428,7 +572,11 @@
               Mavjud bizneslarga (zavod, showroom, do'kon) ekskursiyalar.
             </p>
           </div>
-          <div class="meeting-col">
+          <div
+            data-aos="fade-down-left"
+            data-aos-duration="1000"
+            class="meeting-col"
+          >
             <img
               class="meeting-col-img"
               src="./img/png/meeting  img6.png"
@@ -440,7 +588,11 @@
               futbol o’yinlari.
             </p>
           </div>
-          <div class="meeting-col">
+          <div
+            data-aos="fade-down-left"
+            data-aos-duration="1200"
+            class="meeting-col"
+          >
             <img
               class="meeting-col-img"
               src="./img/png/meeting  img7.png"
@@ -451,7 +603,11 @@
               Yakshanba kunlari biznes nonushta uchrashuvlari.
             </p>
           </div>
-          <div class="meeting-col">
+          <div
+            data-aos="fade-down-left"
+            data-aos-duration="1200"
+            class="meeting-col"
+          >
             <img
               class="meeting-col-img"
               src="./img/png/meeting  img8.png"
@@ -471,9 +627,11 @@
     <!-- STEPS START -->
     <section class="steps">
       <div class="steps-container container">
-        <h2 class="steps-title">Qo‘shilish bosqichlari:</h2>
+        <h2 data-aos="zoom-out-up" data-aos-duration="600" class="steps-title">
+          Qo‘shilish bosqichlari:
+        </h2>
         <div class="steps-row">
-          <div class="steps-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="steps-col">
             <img
               class="steps-col-img"
               src="./img/png/Telegram steps img.png"
@@ -491,11 +649,13 @@
             </p>
           </div>
           <img
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
             class="steps-col-icon"
             src="./img/svg/Vector right img.svg"
             alt="Vector-img"
           />
-          <div class="steps-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="steps-col">
             <img
               class="steps-col-img"
               src="./img/svg/Check img.svg"
@@ -506,11 +666,13 @@
             </p>
           </div>
           <img
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
             class="steps-col-icon"
             src="./img/svg/Vector right img.svg"
             alt="Vector-img"
           />
-          <div class="steps-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="steps-col">
             <img
               class="steps-col-img"
               src="./img/png/Stairs img.png"
@@ -528,27 +690,55 @@
     <!-- STEPS END -->
 
     <!-- PRICE START -->
-    <section class="price">
+    <section class="price" id="price">
       <div class="price-container container">
         <div class="price-row">
-          <h2 class="price-title">Qo‘shilish narxi va a’zolik to‘lovi:</h2>
-          <h3 class="price-heading">Bir martalik qo‘shilish to‘lovi:</h3>
-          <p class="price-text">500$</p>
+          <h2 data-aos="zoom-in-up" data-aos-duration="600" class="price-title">
+            Qo‘shilish narxi va a’zolik to‘lovi:
+          </h2>
+          <h3
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
+            class="price-heading"
+          >
+            Bir martalik qo‘shilish to‘lovi:
+          </h3>
+          <p data-aos="zoom-in-up" data-aos-duration="600" class="price-text">
+            500$
+          </p>
         </div>
         <div class="price-bottom">
-          <h3 class="price-maney-title">Oylik a’zolik to‘lovi: (Tariflar)</h3>
+          <h3
+            data-aos="zoom-in-up"
+            data-aos-duration="600"
+            class="price-maney-title"
+          >
+            Oylik a’zolik to‘lovi: (Tariflar)
+          </h3>
           <div class="price-top">
-            <div class="price-col">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-duration="600"
+              class="price-col"
+            >
               <b class="price-col-month">3</b>
               <h4 class="price-col-title-2">3 oylik obuna</h4>
               <p class="price-col-text">3.500.000 so’m</p>
             </div>
-            <div class="price-col">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-duration="600"
+              class="price-col"
+            >
               <b class="price-col-month">6</b>
               <h4 class="price-col-title-2">6 oylik obuna</h4>
               <p class="price-col-text">6.000.000 so’m</p>
             </div>
-            <div class="price-col">
+            <div
+              data-aos="zoom-in-up"
+              data-aos-duration="600"
+              class="price-col"
+            >
               <b class="price-col-month">12</b>
               <h4 class="price-col-title-2">12 oylik obuna</h4>
               <p class="price-col-text">11.000.000 so’m</p>
@@ -564,7 +754,11 @@
       <div class="members-container container">
         <h2 class="members-title">Klub a’zolari</h2>
         <div class="members-row">
-          <div class="members-col">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="members-col"
+          >
             <img
               class="members-col-img"
               src="./img/jpg/members-img1.jpg"
@@ -573,7 +767,11 @@
             <h3 class="members-col-title">Sherzod Rabbimov</h3>
             <p class="members-col-text">Premium door asoschisi</p>
           </div>
-          <div class="members-col">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="members-col"
+          >
             <img
               class="members-col-img"
               src="./img/jpg/members-img2.jpg"
@@ -582,7 +780,11 @@
             <h3 class="members-col-title">Kamoliddin Mansur</h3>
             <p class="members-col-text">Olmon academy asoschisi</p>
           </div>
-          <div class="members-col">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="members-col"
+          >
             <img
               class="members-col-img"
               src="./img/jpg/members-img3.jpg"
@@ -591,7 +793,11 @@
             <h3 class="members-col-title">Sherzod Darxonov</h3>
             <p class="members-col-text">Foggi do’konlari CEO’si</p>
           </div>
-          <div class="members-col">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="members-col"
+          >
             <img
               class="members-col-img"
               src="./img/jpg/members-img4.jpg"
@@ -600,7 +806,11 @@
             <h3 class="members-col-title">Agasi Arakelyan</h3>
             <p class="members-col-text">Kelyanmedia asoschisi</p>
           </div>
-          <div class="members-col">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="members-col"
+          >
             <img
               class="members-col-img"
               src="./img/jpg/members-img5.jpg"
@@ -611,7 +821,11 @@
               Yumecs logistik kompaniyasi asoschisi
             </p>
           </div>
-          <div class="members-col">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="members-col"
+          >
             <img
               class="members-col-img"
               src="./img/jpg/members-img6.jpg"
@@ -622,7 +836,11 @@
               Nokhost transport solution kompaniyasi asoschisi
             </p>
           </div>
-          <div class="members-col">
+          <div
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="members-col"
+          >
             <img
               class="members-col-img"
               src="./img/jpg/members-img7.jpg"
@@ -633,7 +851,13 @@
               “Khad'ya Farm”, "Khadya Nur", "Zest" kompaniyalari asoschisi
             </p>
           </div>
-          <p class="members-col-count">30+</p>
+          <p
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            class="members-col-count"
+          >
+            30+
+          </p>
         </div>
       </div>
     </section>
@@ -643,20 +867,22 @@
     <section class="form">
       <div class="form-container container">
         <img
+          data-aos="fade-right"
           class="form-img1"
           src="./img/png/galichka two.png"
           alt="form img1"
         />
         <img
+          data-aos="fade-left"
           class="form-img2"
           src="./img/png/galichka two.png"
           alt="form img2"
         />
-        <h2 class="form-title">
+        <h2 data-aos="zoom-in-up" data-aos-duration="600" class="form-title">
           Qo‘shiling va o‘z biznesingizni rivojlantiring!
         </h2>
         <form action="" class="form-row">
-          <div class="form-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="form-col">
             <label class="form-col-title" for="ism">Ismingiz</label>
             <input
               required
@@ -666,7 +892,7 @@
               placeholder="Ismingizni kiriting"
             />
           </div>
-          <div class="form-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="form-col">
             <label class="form-col-title" for="telefon"
               >Telefon raqamingiz</label
             >
@@ -678,7 +904,7 @@
               placeholder="+998"
             />
           </div>
-          <div class="form-col">
+          <div data-aos="zoom-in-up" data-aos-duration="600" class="form-col">
             <button class="hero-link form-btn">
               Ariza topshirish <img src="./img/svg/btn-icon.svg" alt="" />
             </button>
@@ -691,24 +917,24 @@
     <!-- CONTACT START -->
     <section class="contact">
       <div class="contact-container container">
-        <h2 class="contact-title1">
+        <h2 data-aos="zoom-in" data-aos-duration="600" class="contact-title1">
           Savollaringiz bormi?
           <span class="contact-title2">Biz bilan bog‘laning:</span>
         </h2>
         <ul class="contact-list">
-          <li class="contact-item">
+          <li data-aos="zoom-in" data-aos-duration="600" class="contact-item">
             <h3 class="contact-item-title">Telegram:</h3>
             <a class="contact-item-link" target="_blank" href="#"
               >t.me/asoschilarmanager</a
             >
           </li>
-          <li class="contact-item">
+          <li data-aos="zoom-in" data-aos-duration="600" class="contact-item">
             <h3 class="contact-item-title">Telefon:</h3>
             <a class="contact-item-link" href="tel:+998990339938"
               >+998 99 033 99 38</a
             >
           </li>
-          <li class="contact-item">
+          <li data-aos="zoom-in" data-aos-duration="600" class="contact-item">
             <h3 class="contact-item-title">Email:</h3>
             <a class="contact-item-link" href="mailto:abduqodir9938@gmail.com"
               >abduqodir9938@gmail.com</a
@@ -719,6 +945,38 @@
     </section>
     <!-- CONTACT END -->
 
+    <!-- FOOTER START -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <img
+          class="footer-logo"
+          src="./img/svg/logo-footer.svg"
+          alt="site-logo-footer"
+        />
+        <p class="footer-text">ASOSCHILAR CLUB © 2024</p>
+        <div class="footer-social">
+          <a class="footer-social-link" target="_blank" href="#"
+            ><img src="./img/svg/telegram-logo-footer.svg" alt="logo-telegram"
+          /></a>
+          <a class="footer-social-link" target="_blank" href="#"
+            ><img
+              src="./img/svg/instagram-logo-footer.svg"
+              alt="logo-instagram"
+          /></a>
+          <a class="footer-social-tel" href="tel:+998990339938"
+            >+998 99 033 99 38</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- JS START -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/app.js"></script>
+    <!-- JS END -->
   </body>
 </html>
