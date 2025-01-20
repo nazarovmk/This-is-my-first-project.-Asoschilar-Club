@@ -109,6 +109,64 @@ html {
   display: none;
   padding: 10px;
 }
+
+body.active {
+  overflow: hidden;
+}
+
+.responsive-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.responsive-menu-btn {
+  position: absolute;
+  top: 51px;
+  right: 32px;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.responsive-menu.active {
+  left: 0;
+}
+
+.responsive-menu-logo {
+  margin-bottom: 35px;
+}
+
+.responsive-menu .nav-list {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border: none;
+  gap: 36px;
+}
+
+.responsive-menu .nav-link {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.responsive-menu .header-btn {
+  display: inline-block;
+  margin-top: auto;
+}
 /* HEADER END */
 
 /* MAIN START */
@@ -1446,6 +1504,12 @@ html {
     display: flex;
   }
   /* HEADER END */
+}
+
+@media (min-width: 768px) {
+  .responsive-menu {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
