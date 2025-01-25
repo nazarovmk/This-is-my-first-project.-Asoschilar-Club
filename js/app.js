@@ -49,3 +49,29 @@ if (document.querySelector(".responsive-menu-btn")) {
     linkSelector: ".nav-list .nav-link",
   });
 }
+
+const forms = document.querySelectorAll('form[name="Nazarov"]');
+
+forms.forEach((form, index) => {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const loader = document.querySelector(".loader");
+    loader.classList.add("active");
+
+    const formData = new FormData(form);
+    formData.append("formIdentifier", `Form-${index + 1}`);
+
+    fetch(scriptURL, { method: "POST", body: formData })
+      .then((response) => {
+        console.log("Muvaffaqiyatli!", response);
+        loader.classList.remove("active");
+        alert("Ma'lumotingiz yuborildi :)");
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("Xato!", error.message);
+        loader.classList.remove("active");
+        alert("Xatolik yuz berdi. Iltimos, qaytadan urinib ko'ring.");
+      });
+  });
+});

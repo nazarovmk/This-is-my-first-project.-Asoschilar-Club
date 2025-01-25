@@ -10,6 +10,13 @@
     <title>Asoschilar Club</title>
   </head>
   <body>
+    <section class="loader">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+
     <div class="wrapper">
       <!-- HEADER START -->
       <header class="header">
@@ -235,10 +242,11 @@
         <h2 data-aos="zoom-in-up" data-aos-duration="600" class="form-title">
           Qo‘shiling va o‘z biznesingizni rivojlantiring!
         </h2>
-        <form action="" class="form-row">
+        <form name="Nazarov" action="" class="form-row">
           <div data-aos="zoom-in-up" data-aos-duration="600" class="form-col">
             <label class="form-col-title" for="ism">Ismingiz</label>
             <input
+              name="name"
               required
               class="form-col-input"
               id="ism"
@@ -251,6 +259,7 @@
               >Telefon raqamingiz</label
             >
             <input
+              name="tel"
               required
               class="form-col-input"
               id="telefon"
@@ -894,7 +903,7 @@
     <!-- MEMBERS END -->
 
     <!-- FORM START -->
-    <section class="form">
+    <section class="form" id="form">
       <div class="form-container container">
         <img
           data-aos="fade-right"
@@ -911,10 +920,11 @@
         <h2 data-aos="zoom-in-up" data-aos-duration="600" class="form-title">
           Qo‘shiling va o‘z biznesingizni rivojlantiring!
         </h2>
-        <form action="" class="form-row">
+        <form name="Nazarov" action="" class="form-row">
           <div data-aos="zoom-in-up" data-aos-duration="600" class="form-col">
             <label class="form-col-title" for="ism">Ismingiz</label>
             <input
+              name="name"
               required
               class="form-col-input"
               id="ism"
@@ -927,6 +937,7 @@
               >Telefon raqamingiz</label
             >
             <input
+              name="tel"
               required
               class="form-col-input"
               id="telefon"
@@ -1005,6 +1016,26 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz6LF5zzJt45CLV6mRzWrGES2yA4fdq3q7U7vA_nXn1vDQypn3EjFiG4LHip6OR-cPkMA/exec";
+      const form = document.forms["Nazarov"];
+      let loader = document.querySelector(".loader");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        loader.classList.add("active");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            console.log("Success!", response);
+            loader.classList.remove("active");
+            alert("Malumotingiz yuborildi :)");
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
     <script src="./js/app.js"></script>
     <!-- JS END -->
